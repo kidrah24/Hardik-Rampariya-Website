@@ -6,12 +6,12 @@ export default function FloatingParticles() {
 
   useEffect(() => {
     const generateParticles = () => {
-      const newParticles = Array.from({ length: 40 }).map((_, i) => ({
+      const newParticles = Array.from({ length: 20 }).map((_, i) => ({
         id: i,
         x: Math.random() * 100,
         y: Math.random() * 100,
-        size: Math.random() * 3 + 1,
-        duration: Math.random() * 20 + 10,
+        size: Math.random() * 2 + 1,
+        duration: Math.random() * 30 + 20,
       }));
       setParticles(newParticles);
     };
@@ -23,7 +23,7 @@ export default function FloatingParticles() {
       {particles.map((p) => (
         <motion.div
           key={p.id}
-          className="absolute rounded-full bg-[#F27D26] shadow-[0_0_10px_2px_rgba(242,125,38,0.8)]"
+          className="absolute rounded-full bg-[#F27D26]"
           style={{ width: p.size, height: p.size, left: `${p.x}%`, top: `${p.y}%` }}
           animate={{
             y: ['0%', '-100vh'],

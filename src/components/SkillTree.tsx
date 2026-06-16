@@ -3,9 +3,9 @@ import { motion } from 'motion/react';
 const skills = [
   { name: "Community Building", progress: 70 },
   { name: "Content Marketing", progress: 70 },
-  { name: "Social Growth", progress: 60 },
+  { name: "Social Growth", progress: 70 },
   { name: "Web3 & AI Research", progress: 90 },
-  { name: "Motion Graphics", progress: 40 },
+  { name: "Motion Graphics", progress: 60 },
 ];
 
 export default function SkillTree() {

@@ -10,10 +10,7 @@ import Web3Quest from './components/Web3Quest';
 import CreatorStats from './components/CreatorStats';
 import SkillTree from './components/SkillTree';
 import ImpactDashboard from './components/ImpactDashboard';
-import FutureMissions from './components/FutureMissions';
-import BossFight from './components/BossFight';
 import SocialHub from './components/SocialHub';
-import Contact from './components/Contact';
 import UI from './components/UI';
 import KonamiEasterEgg from './components/KonamiEasterEgg';
 import FloatingParticles from './components/FloatingParticles';
@@ -57,16 +54,13 @@ export default function App() {
         }} />
         
         {started && (
-          <div className="relative z-10 bg-[#050505]/40 backdrop-blur-lg border-t-4 border-[#1A1A1A]">
+          <div className="relative z-10 bg-[#050505]/70 backdrop-blur-sm border-t-4 border-[#1A1A1A]">
             <OriginStory />
             <Web3Quest />
             <CreatorStats />
             <SkillTree />
             <ImpactDashboard />
-            <FutureMissions />
-            <BossFight />
             <SocialHub />
-            <Contact />
           </div>
         )}
       </div>
