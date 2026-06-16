@@ -14,6 +14,7 @@ import SocialHub from './components/SocialHub';
 import UI from './components/UI';
 import KonamiEasterEgg from './components/KonamiEasterEgg';
 import FloatingParticles from './components/FloatingParticles';
+import FloatingNav from './components/FloatingNav';
 import { useScrollXP } from './hooks/useScrollXP';
 
 export default function App() {
@@ -42,6 +43,7 @@ export default function App() {
         <KonamiEasterEgg />
         
         {started && <UI level={level} xp={xp} justLeveledUp={justLeveledUp} />}
+        {started && <FloatingNav />}
 
         <Hero onStart={() => {
           setStarted(true);
@@ -55,12 +57,12 @@ export default function App() {
         
         {started && (
           <div className="relative z-10 bg-[#050505]/70 backdrop-blur-sm border-t-4 border-[#1A1A1A]">
-            <OriginStory />
-            <Web3Quest />
-            <CreatorStats />
-            <SkillTree />
-            <ImpactDashboard />
-            <SocialHub />
+            <section id="origin-story"><OriginStory /></section>
+            <section id="web3-quest"><Web3Quest /></section>
+            <section id="creator-stats"><CreatorStats /></section>
+            <section id="skill-tree"><SkillTree /></section>
+            <section id="impact-dashboard"><ImpactDashboard /></section>
+            <section id="social-hub"><SocialHub /></section>
           </div>
         )}
       </div>

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { playLevelUpSound } from '../utils/audio';
 
 const LEVEL_THRESHOLDS = [0, 100, 300, 600, 1000, 1500, 2100, 2800, 3600, 4500, 5500];
 
@@ -32,6 +33,7 @@ export function useScrollXP() {
     }
     
     if (currentLevel > level) {
+      playLevelUpSound();
       setJustLeveledUp(true);
       setLevel(currentLevel);
       setTimeout(() => setJustLeveledUp(false), 3000); // hide notification after 3s

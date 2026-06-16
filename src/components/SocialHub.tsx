@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Twitter, Linkedin, Youtube, Paintbrush } from 'lucide-react';
+import { playClickSound } from '../utils/audio';
 
 const socials = [
   { name: 'LinkedIn', icon: Linkedin, url: 'https://www.linkedin.com/in/hardik-rampariya-196867324/', color: 'hover:bg-blue-600 hover:border-blue-500' },
@@ -25,6 +26,7 @@ export default function SocialHub() {
             href={s.url}
             target="_blank"
             rel="noreferrer"
+            onClick={playClickSound}
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             whileHover={{ scale: 1.1, y: -5 }}

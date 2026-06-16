@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { useEffect, useState } from 'react';
+import { playClickSound } from '../utils/audio';
 
 const ROLES = [
   "Graphic Designer",
@@ -19,6 +20,11 @@ export default function Hero({ onStart }: { onStart: () => void }) {
     }, 2000);
     return () => clearInterval(interval);
   }, []);
+
+  const handleClick = () => {
+    playClickSound();
+    onStart();
+  };
 
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
@@ -62,7 +68,7 @@ export default function Hero({ onStart }: { onStart: () => void }) {
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          onClick={onStart}
+          onClick={handleClick}
           className="group relative px-8 py-3 bg-[#F27D26] text-black font-black uppercase tracking-widest text-sm shadow-[0_0_30px_rgba(242,125,38,0.4)] cursor-pointer"
         >
           <span className="relative flex items-center justify-center gap-2">
