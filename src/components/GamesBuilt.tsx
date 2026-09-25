@@ -16,8 +16,8 @@ const games: GameItem[] = [
     id: 'tank-and-tackle',
     title: 'Tank & Tackle',
     url: 'https://www.tankandtackle.fun/',
-    image: '/Tank&Tackle.png',
-    tagline: 'Action-packed arena combat featuring real-time tactical tank warfare, obstacle navigation, and dynamic combat mechanics.',
+    image: '/tank-and-tackle.jpg',
+    tagline: 'The 60s aquarium challenge. Catch rare exotic fish, dodge underwater hazards, and hook high-value treasure in a fast-paced race against the clock.',
     status: 'live',
   },
   {
@@ -68,7 +68,12 @@ export default function GamesBuilt() {
                 src={game.image}
                 alt={game.title}
                 onError={(e) => {
-                  (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=1200';
+                  const target = e.target as HTMLImageElement;
+                  if (game.id === 'tank-and-tackle' && !target.src.includes('tank-and-tackle.png')) {
+                    target.src = '/tank-and-tackle.png';
+                  } else if (game.id === 'bottle-blitz' && !target.src.includes('bottelblitz.jpg')) {
+                    target.src = '/bottelblitz.jpg';
+                  }
                 }}
                 className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100"
               />
