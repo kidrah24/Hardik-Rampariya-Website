@@ -1,11 +1,12 @@
 import { motion } from 'motion/react';
-import { User, BarChart, BookOpen, Target, Share2 } from 'lucide-react';
+import { User, BarChart, BookOpen, Gamepad2, Target, Share2 } from 'lucide-react';
 import { playClickSound } from '../utils/audio';
 
 const navItems = [
   { id: 'origin-story', icon: User, label: 'Origin' },
   { id: 'creator-stats', icon: BarChart, label: 'Stats' },
   { id: 'skill-tree', icon: BookOpen, label: 'Skills' },
+  { id: 'games-built', icon: Gamepad2, label: 'Games' },
   { id: 'impact-dashboard', icon: Target, label: 'Impact' },
   { id: 'social-hub', icon: Share2, label: 'Social' },
 ];

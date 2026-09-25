@@ -8,6 +8,7 @@ import Hero from './components/Hero';
 import OriginStory from './components/OriginStory';
 import CreatorStats from './components/CreatorStats';
 import SkillTree from './components/SkillTree';
+import GamesBuilt from './components/GamesBuilt';
 import ImpactDashboard from './components/ImpactDashboard';
 import SocialHub from './components/SocialHub';
 import UI from './components/UI';
@@ -59,6 +60,7 @@ export default function App() {
             <section id="origin-story"><OriginStory /></section>
             <section id="creator-stats"><CreatorStats /></section>
             <section id="skill-tree"><SkillTree /></section>
+            <section id="games-built"><GamesBuilt /></section>
             <section id="impact-dashboard"><ImpactDashboard /></section>
             <section id="social-hub"><SocialHub /></section>
           </div>
