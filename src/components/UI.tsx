@@ -21,8 +21,8 @@ export default function UI({ level, xp, justLeveledUp }: Props) {
         </div>
         <div className="flex-1 mx-4 md:mx-12">
           <div className="flex justify-between text-[10px] mb-1 uppercase tracking-widest font-semibold">
-            <span className="text-[#F27D26]">Career Progress: {Math.min(Math.floor((xp / 5500) * 100), 100)}%</span>
-            <span>Level {level} Creator</span>
+            <span className="text-[#F27D26]">Career Progress</span>
+            <span className="text-[#F27D26]">{Math.min(Math.floor((xp / 5500) * 100), 100)}%</span>
           </div>
           <div className="w-full h-2 bg-[#1A1A1A] rounded-full border border-white/5 overflow-hidden">
             <motion.div 
@@ -47,7 +47,7 @@ export default function UI({ level, xp, justLeveledUp }: Props) {
             <div className="bg-yellow-500/10 border border-yellow-500/50 backdrop-blur-md px-6 py-3 rounded-full flex items-center gap-3 shadow-[0_0_30px_rgba(242,125,38,0.3)]">
               <Zap className="text-yellow-500 animate-pulse" />
               <span className="text-yellow-500 font-bold uppercase tracking-widest text-sm">
-                Level Up!
+                Milestone Reached!
               </span>
             </div>
           </motion.div>

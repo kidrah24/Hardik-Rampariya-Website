@@ -10,11 +10,10 @@ const impacts = [
 
 export default function ImpactDashboard() {
   return (
-    <section className="py-32 relative max-w-7xl mx-auto px-6" id="level-5">
+    <section className="py-32 relative max-w-7xl mx-auto px-6">
       <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
         <div>
-          <h2 className="text-sm font-mono text-blue-500 tracking-widest uppercase mb-2">Level 5</h2>
-          <h3 className="text-4xl md:text-5xl font-bold text-white tracking-tight">Impact Dashboard & Portfolio</h3>
+          <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">Impact Dashboard & Portfolio</h2>
           <p className="text-slate-400 mt-4 max-w-xl text-lg">Metrics that matter. Designed for recruiters and partners.</p>
         </div>
       </div>

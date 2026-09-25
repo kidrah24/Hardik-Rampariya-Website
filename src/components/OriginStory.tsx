@@ -4,10 +4,9 @@ import { Award } from 'lucide-react';
 
 export default function OriginStory() {
   return (
-    <section className="py-32 relative max-w-5xl mx-auto px-6" id="level-1">
+    <section className="py-32 relative max-w-5xl mx-auto px-6">
       <div className="mb-16">
-        <h2 className="text-sm font-mono text-cyan-500 tracking-widest uppercase mb-2">Level 1</h2>
-        <h3 className="text-4xl md:text-5xl font-bold text-white tracking-tight">Career Arc</h3>
+        <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">Career Arc</h2>
       </div>
 
       <div className="relative border-l-2 border-slate-800 ml-4 md:ml-8 space-y-20">

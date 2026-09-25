@@ -6,7 +6,6 @@
 import { useState } from 'react';
 import Hero from './components/Hero';
 import OriginStory from './components/OriginStory';
-import Web3Quest from './components/Web3Quest';
 import CreatorStats from './components/CreatorStats';
 import SkillTree from './components/SkillTree';
 import ImpactDashboard from './components/ImpactDashboard';
@@ -58,7 +57,6 @@ export default function App() {
         {started && (
           <div className="relative z-10 bg-[#050505]/70 backdrop-blur-sm border-t-4 border-[#1A1A1A]">
             <section id="origin-story"><OriginStory /></section>
-            <section id="web3-quest"><Web3Quest /></section>
             <section id="creator-stats"><CreatorStats /></section>
             <section id="skill-tree"><SkillTree /></section>
             <section id="impact-dashboard"><ImpactDashboard /></section>

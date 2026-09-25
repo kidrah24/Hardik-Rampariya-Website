@@ -9,17 +9,16 @@ const stats = [
 ];
 
 const milestones = [
-  { level: 5, text: "10+ Shorts Published" },
-  { level: 10, text: "Built Web3 Education Channel" },
-  { level: 15, text: "Dedicated Anichess Content" },
+  { step: "01", text: "10+ Shorts Published" },
+  { step: "02", text: "Built Web3 Education Channel" },
+  { step: "03", text: "Dedicated Anichess Content" },
 ];
 
 export default function CreatorStats() {
   return (
-    <section className="py-32 relative max-w-6xl mx-auto px-6" id="level-3">
+    <section className="py-32 relative max-w-6xl mx-auto px-6">
       <div className="mb-12 text-center">
-        <h2 className="text-sm font-mono text-red-500 tracking-widest uppercase mb-2">Level 3</h2>
-        <h3 className="text-4xl md:text-5xl font-bold text-white tracking-tight">Content Creator Stats</h3>
+        <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">Content Creator Stats</h2>
       </div>
 
       <div className="grid lg:grid-cols-3 gap-8">
@@ -51,7 +50,7 @@ export default function CreatorStats() {
             viewport={{ once: true }}
             className="col-span-2 bg-gradient-to-r from-slate-900 to-slate-800 border border-slate-700 p-6 rounded-2xl mt-4"
           >
-             <h4 className="text-lg font-bold text-white mb-4">Active Channels</h4>
+             <h4 className="text-lg font-bold text-white mb-4">Channels</h4>
              <div className="flex flex-col sm:flex-row gap-4">
                <a href="https://www.youtube.com/@Denizen_492" target="_blank" rel="noreferrer" className="flex-1 bg-black/40 hover:bg-black/60 transition p-4 rounded-xl border border-red-900/30 flex items-center gap-3">
                  <Youtube className="text-red-500" size={24} />
@@ -84,12 +83,12 @@ export default function CreatorStats() {
               <div key={i} className="flex gap-4 items-start">
                 <div className="flex flex-col items-center">
                   <div className="w-10 h-10 rounded-full bg-slate-800 border-2 border-red-500 flex items-center justify-center text-red-500 font-bold text-sm">
-                    {milestone.level}
+                    {milestone.step}
                   </div>
                   {i < milestones.length - 1 && <div className="w-0.5 h-10 bg-slate-800 my-2"></div>}
                 </div>
                 <div className="pt-2">
-                  <p className="text-xs font-mono text-red-400 mb-1">Level {milestone.level} Creator</p>
+                  <p className="text-xs font-mono text-red-400 mb-1">Milestone {milestone.step}</p>
                   <p className="text-slate-200">{milestone.text}</p>
                 </div>
               </div>

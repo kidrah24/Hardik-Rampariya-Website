@@ -12,10 +12,9 @@ const socials = [
 
 export default function SocialHub() {
   return (
-    <section className="py-32 relative max-w-5xl mx-auto px-6" id="level-9">
+    <section className="py-32 relative max-w-5xl mx-auto px-6">
       <div className="mb-16 text-center">
-        <h2 className="text-sm font-mono text-indigo-500 tracking-widest uppercase mb-2">Level 9</h2>
-        <h3 className="text-4xl md:text-5xl font-bold text-white tracking-tight">Social Hub</h3>
+        <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">Social Hub</h2>
         <p className="text-slate-400 mt-4 text-lg">Connect player-to-player.</p>
       </div>
 

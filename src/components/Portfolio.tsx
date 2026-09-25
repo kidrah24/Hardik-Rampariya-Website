@@ -10,11 +10,10 @@ const projects = [
 
 export default function Portfolio() {
   return (
-    <section className="py-32 relative max-w-7xl mx-auto px-6" id="level-6">
+    <section className="py-32 relative max-w-7xl mx-auto px-6">
       <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
          <div>
-          <h2 className="text-sm font-mono text-fuchsia-500 tracking-widest uppercase mb-2">Level 6</h2>
-          <h3 className="text-4xl md:text-5xl font-bold text-white tracking-tight">Creative Portfolio</h3>
+          <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight">Creative Portfolio</h2>
          </div>
          <a href="https://www.behance.net/hardikrampariya" target="_blank" rel="noreferrer" className="flex items-center gap-2 group text-fuchsia-400 hover:text-fuchsia-300">
            <span className="font-mono text-sm uppercase">View full Behance</span>
