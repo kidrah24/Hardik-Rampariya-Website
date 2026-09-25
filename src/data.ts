@@ -56,31 +56,3 @@ export const timelineData = [
     achievement: "5 Years Freelance Hustle"
   }
 ];
-
-export const web3Quests = [
-  {
-    id: "q1",
-    title: "Discover NFTs",
-    description: "Saw a friend sell Blender art for internet money. The rabbit hole opens.",
-    completed: true
-  },
-  {
-    id: "q2",
-    title: "Learn Community Building",
-    description: "Understood that Web3 isn't just tech—it's people.",
-    completed: true
-  },
-  {
-    id: "q3",
-    title: "Enter Web3 Gaming",
-    description: "Explored Anichess and crypto economies.",
-    completed: true
-  }
-];
-
-export const bossData = [
-  { id: "b1", name: "Graphic Design Learning Curve", description: "Mastering the pen tool without crying.", image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&q=80&w=2071" },
-  { id: "b2", name: "Imposter Syndrome", description: "Comparing day 1 to someone else's year 5.", image: "https://images.unsplash.com/photo-1504805572947-34fad45aed93?auto=format&fit=crop&q=80&w=2070" },
-  { id: "b3", name: "Bear Market", description: "Surviving the red bleeding crypto charts.", image: "https://images.unsplash.com/photo-1642104704074-907c0698b98d?auto=format&fit=crop&q=80&w=2070" },
-  { id: "b4", name: "Algorithm Changes", description: "YouTube randomly hiding your best videos.", image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&q=80&w=1974" }
-];

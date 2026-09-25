@@ -15,7 +15,7 @@ export default function UI({ level, xp, justLeveledUp }: Props) {
         <div className="flex items-center gap-3 md:gap-4">
           <div className="w-10 h-10 rounded bg-[#F27D26] flex items-center justify-center font-bold text-black flex-shrink-0">HR</div>
           <div className="hidden sm:block">
-            <div className="text-[10px] text-[#F27D26] uppercase tracking-widest font-bold">Player Status</div>
+            <div className="text-[10px] text-[#F27D26] uppercase tracking-widest font-bold">Player Status • LVL {level}</div>
             <div className="text-lg font-medium tracking-tight">Hardik Rampariya</div>
           </div>
         </div>
