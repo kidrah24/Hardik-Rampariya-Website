@@ -54,9 +54,11 @@ export default function ImpactDashboard() {
               <p className="text-slate-400 mb-6">Spearheaded the strategic partnership between Anichess and Brave Rewards, integrating basic attention tokens and exposing the gaming brand to a massive audience of <strong className="text-slate-200">100M+ Monthly Active Users</strong>.</p>
               
               <div className="mt-auto aspect-video rounded-xl overflow-hidden border border-slate-700/50 bg-slate-800 flex items-center justify-center relative group-hover:border-orange-500/50 transition-colors">
-                 <img 
+                  <img 
                     src="/brave-tweet.png" 
                     alt="Brave Browser Partnership Announcement"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-contain"
                  />
               </div>
@@ -80,6 +82,8 @@ export default function ImpactDashboard() {
                  <img 
                     src="/moonbirds-tweet.png" 
                     alt="Anichess x Moonbirds Partnership Announcement"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-contain"
                  />
               </div>

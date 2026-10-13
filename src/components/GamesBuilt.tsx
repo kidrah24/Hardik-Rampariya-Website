@@ -67,14 +67,8 @@ export default function GamesBuilt() {
               <img
                 src={game.image}
                 alt={game.title}
-                onError={(e) => {
-                  const target = e.target as HTMLImageElement;
-                  if (game.id === 'tank-and-tackle' && !target.src.includes('tank-and-tackle.png')) {
-                    target.src = '/tank-and-tackle.png';
-                  } else if (game.id === 'bottle-blitz' && !target.src.includes('bottelblitz.jpg')) {
-                    target.src = '/bottelblitz.jpg';
-                  }
-                }}
+                loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500 opacity-90 group-hover:opacity-100"
               />
 

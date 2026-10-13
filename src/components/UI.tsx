@@ -1,13 +1,9 @@
 import { motion, AnimatePresence } from 'motion/react';
 import { Zap } from 'lucide-react';
+import { useScrollXP } from '../hooks/useScrollXP';
 
-interface Props {
-  level: number;
-  xp: number;
-  justLeveledUp: boolean;
-}
-
-export default function UI({ level, xp, justLeveledUp }: Props) {
+export default function UI() {
+  const { xp, level, justLeveledUp } = useScrollXP();
   return (
     <>
       {/* Top Bar / HUD */}

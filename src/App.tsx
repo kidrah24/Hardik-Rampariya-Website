@@ -15,11 +15,9 @@ import UI from './components/UI';
 import KonamiEasterEgg from './components/KonamiEasterEgg';
 import FloatingParticles from './components/FloatingParticles';
 import FloatingNav from './components/FloatingNav';
-import { useScrollXP } from './hooks/useScrollXP';
 
 export default function App() {
   const [started, setStarted] = useState(false);
-  const { xp, level, justLeveledUp } = useScrollXP();
 
   return (
     <div className="min-h-screen text-[#E0E0E0] selection:bg-cyan-500/30 font-sans overflow-x-hidden relative bg-[#050505]">
@@ -30,6 +28,7 @@ export default function App() {
           loop 
           muted 
           playsInline
+          preload="metadata"
           className="w-full h-full object-cover"
         >
           <source src="/website-bg-video.mp4" type="video/mp4" />
@@ -42,7 +41,7 @@ export default function App() {
         <FloatingParticles />
         <KonamiEasterEgg />
         
-        {started && <UI level={level} xp={xp} justLeveledUp={justLeveledUp} />}
+        {started && <UI />}
         {started && <FloatingNav />}
 
         <Hero onStart={() => {
