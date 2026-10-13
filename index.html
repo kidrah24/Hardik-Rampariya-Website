@@ -7,6 +7,51 @@
     <meta name="description" content="Gamified Web3 portfolio for Hardik Rampariya" />
     <meta property="og:title" content="Hardik's Adventure" />
     <meta property="og:description" content="Gamified Web3 portfolio for Hardik Rampariya" />
+    <script>
+      // Prevent browser extension collision errors (e.g. multiple Web3 wallet extensions redefining window.ethereum)
+      (function() {
+        try {
+          var origDefineProperty = Object.defineProperty;
+          Object.defineProperty = function(obj, prop, descriptor) {
+            if (obj === window && prop === 'ethereum') {
+              try {
+                if (descriptor && typeof descriptor === 'object') {
+                  descriptor.configurable = true;
+                  descriptor.writable = true;
+                }
+                return origDefineProperty.call(Object, obj, prop, descriptor);
+              } catch (err) {
+                return obj;
+              }
+            }
+            return origDefineProperty.apply(this, arguments);
+          };
+        } catch (_) {}
+
+        window.addEventListener('error', function(event) {
+          if (
+            event.message &&
+            (event.message.indexOf('Cannot redefine property: ethereum') !== -1 ||
+             (event.filename && event.filename.indexOf('chrome-extension://') !== -1))
+          ) {
+            event.stopImmediatePropagation();
+            event.preventDefault();
+            return true;
+          }
+        }, true);
+
+        window.addEventListener('unhandledrejection', function(event) {
+          if (
+            event.reason &&
+            typeof event.reason.message === 'string' &&
+            event.reason.message.indexOf('Cannot redefine property: ethereum') !== -1
+          ) {
+            event.stopImmediatePropagation();
+            event.preventDefault();
+          }
+        }, true);
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
