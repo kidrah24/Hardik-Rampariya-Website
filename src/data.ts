@@ -1,7 +1,6 @@
 export const timelineData = [
   {
     id: "t7",
-    year: "2026 – Present",
     title: "Community Manager",
     company: "Multipli.fi",
     description: "Spearheading community engagement, growth strategies and interactions on site.",
@@ -17,7 +16,6 @@ export const timelineData = [
   },
   {
     id: "t6",
-    year: "Feb 2025 - Mar 2025",
     title: "Junior Marketing & Project Manager",
     company: "Seedify",
     achievement: "Tokenomics & Campaign Coordination",
@@ -28,7 +26,6 @@ export const timelineData = [
   },
   {
     id: "t5",
-    year: "2023 – 2024",
     title: "Head Moderator",
     company: "Navigate AI",
     achievement: "0 to 20K+ Community Growth",
@@ -41,7 +38,6 @@ export const timelineData = [
   },
   {
     id: "t4",
-    year: "Jan 2024 - Dec 2024",
     title: "Discord Moderator",
     company: "KOKODI Games",
     achievement: "Web3 Community Guild",
@@ -55,7 +51,6 @@ export const timelineData = [
   },
   {
     id: "t3",
-    year: "Jul 2023 - Apr 2024",
     title: "Motion Graphic Artist",
     company: "WhyNot Advertising",
     achievement: "Motion Mastery & Campaign Execution",
@@ -67,7 +62,6 @@ export const timelineData = [
   },
   {
     id: "t2",
-    year: "Mar 2023 - Jul 2023",
     title: "Graphic Designer",
     company: "Another Idea Productions",
     achievement: "Agency Experience",
@@ -77,7 +71,6 @@ export const timelineData = [
   },
   {
     id: "t1",
-    year: "Jan 2020 - Jan 2025",
     title: "Freelance Graphic Designer",
     company: "Freelance",
     achievement: "5 Years Freelance Hustle",

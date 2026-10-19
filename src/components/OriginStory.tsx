@@ -47,11 +47,8 @@ export default function OriginStory() {
               <div className="absolute -left-[11px] top-1 w-5 h-5 rounded-full bg-slate-900 border-2 border-cyan-500 shadow-[0_0_15px_rgba(242,125,38,0.5)]"></div>
               
               <div className="mb-2 flex flex-wrap items-center gap-3">
-                <span className="text-cyan-400 font-mono text-sm border border-cyan-900/50 bg-cyan-950/30 px-3 py-1 rounded-full">
-                  {item.year}
-                </span>
                 {'company' in item && (
-                  <span className="text-[#F27D26] font-mono text-xs uppercase tracking-widest mt-1 sm:mt-0 font-semibold">
+                  <span className="text-cyan-400 font-mono text-xs uppercase tracking-widest border border-cyan-900/50 bg-cyan-950/30 px-3 py-1 rounded-full font-semibold">
                     {item.company}
                   </span>
                 )}
