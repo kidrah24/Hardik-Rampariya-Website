@@ -7,8 +7,7 @@ const ROLES = [
   "Motion Designer",
   "Community Manager",
   "Web3 Marketer",
-  "Content Creator",
-  "Future Founder"
+  "Content Creator"
 ];
 
 export default function Hero({ onStart }: { onStart: () => void }) {

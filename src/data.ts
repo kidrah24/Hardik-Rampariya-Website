@@ -11,7 +11,8 @@ export const timelineData = [
       "Identify recurring issues and patterns across user conversations and support requests.",
       "Conduct hands-on product testing to understand user flows and identify friction points.",
       "Gather qualitative feedback from the community and communicate relevant insights to product and internal teams.",
-      "Work across support, partnerships, BD and community operations, giving exposure to different user and business perspectives."
+      "Work across support, partnerships, BD and community operations, giving exposure to different user and business perspectives.",
+      "Introduced Grok bot on Discord and automated the ticket system, which now handles 70-80% of tickets."
     ]
   },
   {
@@ -33,7 +34,8 @@ export const timelineData = [
       "Managed 2K+ support tickets and 10K+ educational interactions, helping users with questions, concerns and difficulties with the product.",
       "Identified recurring user problems and helped improve communication and onboarding.",
       "Created user education content based on common questions and areas where users needed more guidance.",
-      "Grew and managed a community from 0 to 20K+ members."
+      "Grew and managed a community from 0 to 20K+ members.",
+      "Led a team of three moderators across the Philippines, Africa and India, handling regional channels in local languages."
     ]
   },
   {
