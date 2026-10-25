@@ -1,18 +1,16 @@
 export const timelineData = [
   {
     id: "t7",
-    title: "Community Manager",
+    title: "Community & Product Operations Lead",
     company: "Multipli.fi",
-    description: "Spearheading community engagement, growth strategies and interactions on site.",
-    achievement: "Community Leadership",
+    achievement: "Community & Product Ops Leadership",
     details: [
-      "Interact directly with users to understand their problems, questions, needs and pain points.",
+      "Introduced a Grok bot on Discord and automated the ticket system, which now handles 70–80% of tickets.",
       "Investigate user-reported issues and work with internal teams to understand root causes and drive resolution.",
       "Identify recurring issues and patterns across user conversations and support requests.",
-      "Conduct hands-on product testing to understand user flows and identify friction points.",
       "Gather qualitative feedback from the community and communicate relevant insights to product and internal teams.",
-      "Work across support, partnerships, BD and community operations, giving exposure to different user and business perspectives.",
-      "Introduced Grok bot on Discord and automated the ticket system, which now handles 70-80% of tickets."
+      "Conduct hands-on product testing to understand user flows and identify friction points.",
+      "Work across support, partnerships, BD and community operations, giving exposure to different user and business perspectives."
     ]
   },
   {
