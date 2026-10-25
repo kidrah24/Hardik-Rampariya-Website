@@ -5,7 +5,7 @@ import { playClickSound } from '../utils/audio';
 const ROLES = [
   "Graphic Designer",
   "Motion Designer",
-  "Community Manager",
+  "Community & Product Ops",
   "Web3 Marketer",
   "Content Creator"
 ];

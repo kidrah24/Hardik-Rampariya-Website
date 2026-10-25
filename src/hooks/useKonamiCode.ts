@@ -8,18 +8,19 @@ const KONAMI_CODE = [
 
 export function useKonamiCode() {
   const [success, setSuccess] = useState(false);
-  const [inputSequence, setInputSequence] = useState<string[]>([]);
 
   useEffect(() => {
+    const sequence: string[] = [];
+    const targetSequence = KONAMI_CODE.join(',');
+
     const handleKeyDown = (e: KeyboardEvent) => {
-      const key = e.key;
-      setInputSequence((prev) => {
-        const newSequence = [...prev, key].slice(-KONAMI_CODE.length);
-        if (newSequence.join(',') === KONAMI_CODE.join(',')) {
-          setSuccess(true);
-        }
-        return newSequence;
-      });
+      sequence.push(e.key);
+      if (sequence.length > KONAMI_CODE.length) {
+        sequence.shift();
+      }
+      if (sequence.join(',') === targetSequence) {
+        setSuccess(true);
+      }
     };
 
     window.addEventListener('keydown', handleKeyDown);

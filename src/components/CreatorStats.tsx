@@ -5,7 +5,7 @@ const stats = [
   { label: "Subscribers", value: "4.5K+", icon: Users, color: "text-red-500" },
   { label: "Total Views", value: "2M+", icon: TrendingUp, color: "text-green-500" },
   { label: "Videos", value: "120+", icon: PlaySquare, color: "text-blue-500" },
-  { label: "Total Views", value: "100K", icon: Youtube, color: "text-red-400" },
+  { label: "YouTube Views", value: "100K+", icon: Youtube, color: "text-red-400" },
 ];
 
 const milestones = [
